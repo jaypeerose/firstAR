@@ -1,4 +1,4 @@
 # firstAR
 Class exercise of AR program
 
-https://jrosete.github.io/firstAR/
+https://jrosete.github.io/firstAR/nikkitree
