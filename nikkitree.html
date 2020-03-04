@@ -4,7 +4,6 @@
 
 <body style='margin : 0px; overflow: hidden;'>		
 	<a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam;'>
-		<a-box color="red" scale='.1 .1 .1'></a-box>
         	<a-assets>
              		<a-asset-item id="gMario-obj" src="Assets/Luigi_obj.obj"></a-asset-item>
 			<a-asset-item id="gMario-mtl" src="Assets/Luigi_obj.mtl"></a-asset-item>
@@ -13,6 +12,7 @@
         	<a-marker type='pattern' url='Markers/pattern-LMarker.patt'>
             		<a-entity obj-model="obj: #gMario-obj; mtl: #gMario-mtl" scale='0.01 0.01 0.01' 
 				  rotation='270 0 0' position='0 0 0'></a-entity>
+			<a-box color="red" scale='.1 .1 .1'></a-box>
         	</a-marker>
 		
 		<a-entity camera></a-entity>
