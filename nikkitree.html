@@ -7,11 +7,15 @@
         	<a-assets>
              		<a-asset-item id="gMario-obj" src="Assets/Luigi_obj.obj"></a-asset-item>
 			<a-asset-item id="gMario-mtl" src="Assets/Luigi_obj.mtl"></a-asset-item>
+			<a-asset-item id="Mario-obj" src="Assets/mario_obj.obj"></a-asset-item>
+			<a-asset-item id="Mario-mtl" src="Assets/mario_obj.mtl"></a-asset-item>
         	</a-assets>
         
         	<a-marker type='pattern' url='Markers/pattern-LMarker.patt'>
             		<a-entity obj-model="obj: #gMario-obj; mtl: #gMario-mtl" scale='0.01 0.01 0.01' 
-				  rotation='270 0 0' position='0 0 0'></a-entity>
+				  rotation='270 0 0' position='.5 0 0'></a-entity>
+			<a-entity obj-model="obj: #mario-obj; mtl: #mario-mtl" scale='0.01 0.01 0.01' 
+				  rotation='270 0 0' position='-.5 0 0'></a-entity>
 			<a-box color="red" scale='1 1 1'></a-box>
         	</a-marker>
 		
