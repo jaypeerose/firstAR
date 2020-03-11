@@ -5,12 +5,13 @@
 <body style='margin : 0px; overflow: hidden;'>		
 	<a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam;'>
         	<a-assets>
-             		<a-asset-item id="bomb_gltf" src="Assets/simple_bomb/scene.gltf"></a-asset-item>
+             		<a-asset-item id="bomb_obj" src="Assets/bomb/bomb.obj"></a-asset-item>
+			<a-asset-item if="bomb_mtl" src="Assets/bomb/bomb.mtl"></a-asset-item>
 			
         	</a-assets>
         
         	<a-marker type='pattern' url='Markers/pattern-LMarker.patt'>
-            		<a-entity gltf-model="obj: #bomb_gltf; scale='0.01 0.01 0.01' 
+            		<a-entity obj-model="obj: #bomb_obj mtl: #bomb_mtl; scale='0.01 0.01 0.01' 
 				  rotation='270 0 0' position='.5 0 0'></a-entity>
 
         	</a-marker>
